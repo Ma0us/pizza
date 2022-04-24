@@ -1,4 +1,5 @@
 using DarkUI.Forms;
+using Microsoft.Win32;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
@@ -6,6 +7,21 @@ namespace pizza
 {
     public partial class Form1 : DarkForm
     {
+        public Form1(string fn)
+        {
+            InitializeComponent();
+            textBox.Clear();
+            using (StreamReader sr = new StreamReader(fn.ToString())) 
+            {
+                textBox.Text = sr.ReadToEnd();
+                sr.Close();
+            }
+            filePath = fn.ToString();
+            toolStripMenuItem2.Enabled = true;
+            this.Text = filePath + " -  pizza";
+            isSaved = true;
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -23,6 +39,8 @@ namespace pizza
             isSaved = true;
         }
 
+
+        // Dark Titlebar
         [DllImport("DwmApi")] //System.Runtime.InteropServices
         private static extern int DwmSetWindowAttribute(IntPtr hwnd, int attr, int[] attrValue, int attrSize);
 
