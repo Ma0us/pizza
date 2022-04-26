@@ -20,3 +20,5 @@ Installing pizza:
 7. Click "More Apps"
 8. Click "Look for another app on this PC"
 9. Select C:\Program Files\Pizza\pizza.exe
+10. Open C:\Users\mgn\AppData\Roaming\Microsoft\Windows\Start Menu\Programs in File Explorer
+11. Create a shortcut with this location: C:\Program Files\Pizza\pizza.exe
