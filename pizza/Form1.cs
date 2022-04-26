@@ -258,5 +258,25 @@ namespace pizza
                 Save();
             }
         }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            textBox.ShowFindDialog();
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            textBox.ShowReplaceDialog();
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            textBox.SelectAll();
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            textBox.InsertText(DateTime.Now.ToString());
+        }
     }
 }
