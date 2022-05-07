@@ -24,3 +24,4 @@ Installing pizza:
 9. Select C:\Program Files\Pizza\pizza.exe
 10. Open C:\Users\mgn\AppData\Roaming\Microsoft\Windows\Start Menu\Programs in File Explorer
 11. Create a shortcut with this location: C:\Program Files\Pizza\pizza.exe
+12. Install .NET 6.0 Desktop Runtime: https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime
