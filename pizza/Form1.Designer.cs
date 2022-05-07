@@ -59,6 +59,7 @@
             this.deleteLineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripDropDownButton3 = new System.Windows.Forms.ToolStripDropDownButton();
             this.changeFontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,16 +77,20 @@
             this.zoomInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zoomOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restoreDefaultZoomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox = new FastColoredTextBoxNS.FastColoredTextBox();
+            this.toolStripDropDownButton5 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.viewOnlineHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sendFeedbackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fontDialog = new System.Windows.Forms.FontDialog();
             this.darkStatusStrip1 = new DarkUI.Controls.DarkStatusStrip();
             this.zoomLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.lineLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.autoSaveTimer = new System.Windows.Forms.Timer(this.components);
-            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox = new FastColoredTextBoxNS.FastColoredTextBox();
             this.darkToolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textBox)).BeginInit();
             this.darkStatusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textBox)).BeginInit();
             this.SuspendLayout();
             // 
             // darkToolStrip1
@@ -101,7 +106,8 @@
             this.toolStripDropDownButton1,
             this.toolStripDropDownButton2,
             this.toolStripDropDownButton3,
-            this.toolStripDropDownButton4});
+            this.toolStripDropDownButton4,
+            this.toolStripDropDownButton5});
             this.darkToolStrip1.Location = new System.Drawing.Point(0, 0);
             this.darkToolStrip1.Name = "darkToolStrip1";
             this.darkToolStrip1.Padding = new System.Windows.Forms.Padding(5, 0, 1, 0);
@@ -396,6 +402,15 @@
             this.toolStripMenuItem7.Text = "Select All (Ctrl + A)";
             this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
             // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.toolStripMenuItem8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(219, 22);
+            this.toolStripMenuItem8.Text = "Insert Time/Date";
+            this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
+            // 
             // toolStripDropDownButton3
             // 
             this.toolStripDropDownButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
@@ -570,6 +585,91 @@
             this.restoreDefaultZoomToolStripMenuItem.Text = "Restore Default Zoom";
             this.restoreDefaultZoomToolStripMenuItem.Click += new System.EventHandler(this.restoreDefaultZoomToolStripMenuItem_Click);
             // 
+            // toolStripDropDownButton5
+            // 
+            this.toolStripDropDownButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.toolStripDropDownButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripDropDownButton5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewOnlineHelpToolStripMenuItem,
+            this.sendFeedbackToolStripMenuItem,
+            this.toolStripSeparator7,
+            this.aboutToolStripMenuItem});
+            this.toolStripDropDownButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.toolStripDropDownButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton5.Image")));
+            this.toolStripDropDownButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton5.Name = "toolStripDropDownButton5";
+            this.toolStripDropDownButton5.Size = new System.Drawing.Size(45, 25);
+            this.toolStripDropDownButton5.Text = "Help";
+            // 
+            // viewOnlineHelpToolStripMenuItem
+            // 
+            this.viewOnlineHelpToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.viewOnlineHelpToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.viewOnlineHelpToolStripMenuItem.Name = "viewOnlineHelpToolStripMenuItem";
+            this.viewOnlineHelpToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.viewOnlineHelpToolStripMenuItem.Text = "View Help";
+            this.viewOnlineHelpToolStripMenuItem.Click += new System.EventHandler(this.viewOnlineHelpToolStripMenuItem_Click);
+            // 
+            // sendFeedbackToolStripMenuItem
+            // 
+            this.sendFeedbackToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.sendFeedbackToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.sendFeedbackToolStripMenuItem.Name = "sendFeedbackToolStripMenuItem";
+            this.sendFeedbackToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.sendFeedbackToolStripMenuItem.Text = "Send Feedback";
+            this.sendFeedbackToolStripMenuItem.Click += new System.EventHandler(this.sendFeedbackToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.toolStripSeparator7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.toolStripSeparator7.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(150, 6);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.aboutToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.aboutToolStripMenuItem.Text = "About pizza";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // darkStatusStrip1
+            // 
+            this.darkStatusStrip1.AutoSize = false;
+            this.darkStatusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.darkStatusStrip1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.darkStatusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.zoomLabel,
+            this.lineLabel});
+            this.darkStatusStrip1.Location = new System.Drawing.Point(0, 322);
+            this.darkStatusStrip1.Name = "darkStatusStrip1";
+            this.darkStatusStrip1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 3);
+            this.darkStatusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.darkStatusStrip1.Size = new System.Drawing.Size(543, 28);
+            this.darkStatusStrip1.SizingGrip = false;
+            this.darkStatusStrip1.TabIndex = 2;
+            this.darkStatusStrip1.Text = "StatusStrip";
+            // 
+            // zoomLabel
+            // 
+            this.zoomLabel.Name = "zoomLabel";
+            this.zoomLabel.Size = new System.Drawing.Size(35, 15);
+            this.zoomLabel.Text = "100%";
+            // 
+            // lineLabel
+            // 
+            this.lineLabel.Name = "lineLabel";
+            this.lineLabel.Size = new System.Drawing.Size(29, 15);
+            this.lineLabel.Text = "ln: 1";
+            // 
+            // autoSaveTimer
+            // 
+            this.autoSaveTimer.Interval = 1000;
+            this.autoSaveTimer.Tick += new System.EventHandler(this.autoSaveTimer_Tick);
+            // 
             // textBox
             // 
             this.textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -609,49 +709,6 @@
             this.textBox.TextChanged += new System.EventHandler<FastColoredTextBoxNS.TextChangedEventArgs>(this.textBox_TextChanged);
             this.textBox.ZoomChanged += new System.EventHandler(this.textBox_ZoomChanged);
             // 
-            // darkStatusStrip1
-            // 
-            this.darkStatusStrip1.AutoSize = false;
-            this.darkStatusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
-            this.darkStatusStrip1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.darkStatusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.zoomLabel,
-            this.lineLabel});
-            this.darkStatusStrip1.Location = new System.Drawing.Point(0, 322);
-            this.darkStatusStrip1.Name = "darkStatusStrip1";
-            this.darkStatusStrip1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 3);
-            this.darkStatusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.darkStatusStrip1.Size = new System.Drawing.Size(543, 28);
-            this.darkStatusStrip1.SizingGrip = false;
-            this.darkStatusStrip1.TabIndex = 2;
-            this.darkStatusStrip1.Text = "StatusStrip";
-            // 
-            // zoomLabel
-            // 
-            this.zoomLabel.Name = "zoomLabel";
-            this.zoomLabel.Size = new System.Drawing.Size(35, 15);
-            this.zoomLabel.Text = "100%";
-            // 
-            // lineLabel
-            // 
-            this.lineLabel.Name = "lineLabel";
-            this.lineLabel.Size = new System.Drawing.Size(29, 15);
-            this.lineLabel.Text = "ln: 1";
-            // 
-            // autoSaveTimer
-            // 
-            this.autoSaveTimer.Interval = 1000;
-            this.autoSaveTimer.Tick += new System.EventHandler(this.autoSaveTimer_Tick);
-            // 
-            // toolStripMenuItem8
-            // 
-            this.toolStripMenuItem8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
-            this.toolStripMenuItem8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(219, 22);
-            this.toolStripMenuItem8.Text = "Insert Time/Date";
-            this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -665,9 +722,9 @@
             this.Text = "pizza";
             this.darkToolStrip1.ResumeLayout(false);
             this.darkToolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textBox)).EndInit();
             this.darkStatusStrip1.ResumeLayout(false);
             this.darkStatusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -676,7 +733,6 @@
 
         private DarkUI.Controls.DarkToolStrip darkToolStrip1;
         private ToolStripDropDownButton toolStripDropDownButton1;
-        private FastColoredTextBoxNS.FastColoredTextBox textBox;
         private ToolStripDropDownButton toolStripDropDownButton2;
         private ToolStripDropDownButton toolStripDropDownButton3;
         private ToolStripMenuItem undoToolStripMenuItem;
@@ -727,5 +783,11 @@
         private ToolStripSeparator toolStripSeparator6;
         private ToolStripMenuItem toolStripMenuItem7;
         private ToolStripMenuItem toolStripMenuItem8;
+        private ToolStripDropDownButton toolStripDropDownButton5;
+        private ToolStripMenuItem viewOnlineHelpToolStripMenuItem;
+        private ToolStripMenuItem sendFeedbackToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparator7;
+        private ToolStripMenuItem aboutToolStripMenuItem;
+        private FastColoredTextBoxNS.FastColoredTextBox textBox;
     }
 }

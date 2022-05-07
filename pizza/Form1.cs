@@ -20,6 +20,9 @@ namespace pizza
             toolStripMenuItem2.Enabled = true;
             this.Text = filePath + " -  pizza";
             isSaved = true;
+            SetStyle(ControlStyles.SupportsTransparentBackColor, true);
+            this.BackColor = Color.FromArgb(64, 64, 64);
+            this.Opacity = 0.7;
         }
 
         public Form1()
@@ -93,7 +96,7 @@ namespace pizza
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -178,7 +181,8 @@ namespace pizza
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            textBox.Clear();
+            DarkForm frm = new Form1();
+            frm.Show();
         }
 
         private void changeFontToolStripMenuItem_Click(object sender, EventArgs e)
@@ -277,6 +281,24 @@ namespace pizza
         private void toolStripMenuItem8_Click(object sender, EventArgs e)
         {
             textBox.InsertText(DateTime.Now.ToString());
+        }
+
+        private void viewOnlineHelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string url = "https://github.com/Ma0us/pizza/wiki";
+            Process.Start(new ProcessStartInfo { FileName = url, UseShellExecute = true });
+        }
+
+        private void sendFeedbackToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string url = "https://github.com/Ma0us/pizza/issues/new";
+            Process.Start(new ProcessStartInfo { FileName = url, UseShellExecute = true });
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string url = "https://github.com/Ma0us/pizza#readme";
+            Process.Start(new ProcessStartInfo { FileName = url, UseShellExecute = true });
         }
     }
 }
