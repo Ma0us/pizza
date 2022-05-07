@@ -13,7 +13,7 @@ Features:
 
 
 Installing pizza:
-1. Download binary here: https://www.mediafire.com/file/3p4po007hxxx02l/pizza.7z/file
+1. Download binary here: https://www.mediafire.com/file/1x7czm8t4fnf4ll/pizza.7z/file
 2. Unzip the file with 7Zip or WinRAR
 3. Make a folder in C:\Program Files and name it "Pizza"
 4. Move the binary to C:\Program Files\Pizza
