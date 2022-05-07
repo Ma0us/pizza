@@ -1,6 +1,8 @@
 # pizza
 Pizza is a simple text editor for Windows.
 
+Wiki: https://github.com/Ma0us/pizza/wiki
+
 Features:
 - Syntax highlighting
 - Autosave
