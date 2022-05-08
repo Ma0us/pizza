@@ -300,5 +300,17 @@ namespace pizza
             string url = "https://github.com/Ma0us/pizza#readme";
             Process.Start(new ProcessStartInfo { FileName = url, UseShellExecute = true });
         }
+
+        private void showLineNumbersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (showLineNumbersToolStripMenuItem.Checked == true) {
+                showLineNumbersToolStripMenuItem.Checked = false;
+                textBox.ShowLineNumbers = false;
+            } else
+            {
+                showLineNumbersToolStripMenuItem.Checked = true;
+                textBox.ShowLineNumbers = true;
+            }
+        }
     }
 }
