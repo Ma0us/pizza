@@ -1,4 +1,7 @@
 # pizza
+
+![mainappicon](https://user-images.githubusercontent.com/85688939/167290982-64eaf3db-8f63-4701-9510-2fbcc1552371.png)
+
 Pizza is a simple text editor for Windows.
 
 Wiki: https://github.com/Ma0us/pizza/wiki
