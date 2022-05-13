@@ -20,9 +20,6 @@ namespace pizza
             toolStripMenuItem2.Enabled = true;
             this.Text = filePath + " -  pizza";
             isSaved = true;
-            SetStyle(ControlStyles.SupportsTransparentBackColor, true);
-            this.BackColor = Color.FromArgb(64, 64, 64);
-            this.Opacity = 0.7;
         }
 
         public Form1()
@@ -62,6 +59,9 @@ namespace pizza
         {
             OpenFileDialog openfile = new OpenFileDialog();
             openfile.Title = "Open..";
+            openfile.InitialDirectory = "c:\\";
+            openfile.Filter = "Text Documents(*.txt)|*.txt|All files (*.*)|*.*";
+            openfile.RestoreDirectory = true;
             if (openfile.ShowDialog() == DialogResult.OK)
             {
                 textBox.Clear();
@@ -81,6 +81,9 @@ namespace pizza
         {
             SaveFileDialog savefile = new SaveFileDialog();
             savefile.Title = "Save as..";
+            savefile.InitialDirectory = "c:\\";
+            savefile.Filter = "Text Documents(*.txt)|*.txt|All files (*.*)|*.*";
+            savefile.RestoreDirectory = true;
             if (savefile.ShowDialog() == DialogResult.OK)
             {
                 StreamWriter txtoutput = new StreamWriter(savefile.FileName);
@@ -134,49 +137,59 @@ namespace pizza
             textBox.ClearCurrentLine();
         }
 
+        public void changeLang(FastColoredTextBoxNS.Language lang)
+        {
+            textBox.Language = lang;
+            //reload text
+            string bstring;
+            bstring = textBox.Text;
+            textBox.Clear();
+            textBox.Text = bstring;
+        }
+
         private void noneToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox.Language = FastColoredTextBoxNS.Language.Custom;
+            changeLang(FastColoredTextBoxNS.Language.Custom);
         }
 
         private void cToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox.Language = FastColoredTextBoxNS.Language.CSharp;
+            changeLang(FastColoredTextBoxNS.Language.CSharp);
         }
 
         private void vBToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox.Language = FastColoredTextBoxNS.Language.VB;
+            changeLang(FastColoredTextBoxNS.Language.VB);
         }
 
         private void hTMLToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox.Language = FastColoredTextBoxNS.Language.HTML;
+            changeLang(FastColoredTextBoxNS.Language.HTML);
         }
 
         private void xMLToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox.Language = FastColoredTextBoxNS.Language.XML;
+            changeLang(FastColoredTextBoxNS.Language.XML);
         }
 
         private void sQLToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox.Language = FastColoredTextBoxNS.Language.SQL;
+            changeLang(FastColoredTextBoxNS.Language.SQL);
         }
 
         private void pHPToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox.Language = FastColoredTextBoxNS.Language.PHP;
+            changeLang(FastColoredTextBoxNS.Language.PHP);
         }
 
         private void jSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox.Language = FastColoredTextBoxNS.Language.JS;
+            changeLang(FastColoredTextBoxNS.Language.JS);
         }
 
         private void luaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox.Language = FastColoredTextBoxNS.Language.Lua;
+            changeLang(FastColoredTextBoxNS.Language.Lua);
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)

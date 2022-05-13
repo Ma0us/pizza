@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "pizza": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\mgn\\Documents\\hello.txt"
+    }
+  }
+}

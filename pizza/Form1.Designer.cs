@@ -83,6 +83,7 @@
             this.sendFeedbackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.version10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fontDialog = new System.Windows.Forms.FontDialog();
             this.darkStatusStrip1 = new DarkUI.Controls.DarkStatusStrip();
             this.zoomLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -604,7 +605,8 @@
             this.viewOnlineHelpToolStripMenuItem,
             this.sendFeedbackToolStripMenuItem,
             this.toolStripSeparator7,
-            this.aboutToolStripMenuItem});
+            this.aboutToolStripMenuItem,
+            this.version10ToolStripMenuItem});
             this.toolStripDropDownButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.toolStripDropDownButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton5.Image")));
             this.toolStripDropDownButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -646,6 +648,15 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.aboutToolStripMenuItem.Text = "About pizza";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // version10ToolStripMenuItem
+            // 
+            this.version10ToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.version10ToolStripMenuItem.Enabled = false;
+            this.version10ToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.version10ToolStripMenuItem.Name = "version10ToolStripMenuItem";
+            this.version10ToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.version10ToolStripMenuItem.Text = "Version 1.0";
             // 
             // darkStatusStrip1
             // 
@@ -731,6 +742,8 @@
             this.Controls.Add(this.darkToolStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "pizza";
             this.darkToolStrip1.ResumeLayout(false);
             this.darkToolStrip1.PerformLayout();
@@ -802,5 +815,6 @@
         private ToolStripMenuItem aboutToolStripMenuItem;
         private FastColoredTextBoxNS.FastColoredTextBox textBox;
         private ToolStripMenuItem showLineNumbersToolStripMenuItem;
+        private ToolStripMenuItem version10ToolStripMenuItem;
     }
 }
