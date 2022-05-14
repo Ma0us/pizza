@@ -10,6 +10,13 @@ namespace pizza
         public Form1(string fn)
         {
             InitializeComponent();
+            if (Properties.Settings.Default.Font == null)
+            {
+                Properties.Settings.Default.Font = textBox.Font;
+            } else
+            {
+                textBox.Font = Properties.Settings.Default.Font;
+            }
             textBox.Clear();
             using (StreamReader sr = new StreamReader(fn.ToString())) 
             {
@@ -25,6 +32,14 @@ namespace pizza
         public Form1()
         {
             InitializeComponent();
+            if (Properties.Settings.Default.Font == null)
+            {
+                Properties.Settings.Default.Font = textBox.Font;
+            }
+            else
+            {
+                textBox.Font = Properties.Settings.Default.Font;
+            }
         }
 
         public string filePath = "";
@@ -203,6 +218,8 @@ namespace pizza
             if (fontDialog.ShowDialog() == DialogResult.OK)
             {
                 textBox.Font = fontDialog.Font;
+                Properties.Settings.Default.Font = fontDialog.Font;
+                Properties.Settings.Default.Save();
             }
         }
 

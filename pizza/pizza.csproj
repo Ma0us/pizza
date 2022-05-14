@@ -6,11 +6,11 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <ApplicationIcon>mainappicon.ico</ApplicationIcon>
+    <ApplicationIcon>pizzaappicon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="mainappicon.ico" />
+    <Content Include="pizzaappicon.ico" />
   </ItemGroup>
 
   <ItemGroup>
